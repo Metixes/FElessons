@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+</head>
+<body>
+    
+    <h2>Create an Account</h2>
+
+    <form id="create_account">
+
+        <div>
+            <label for="text1">First Name</label>
+            <input type="text" id="text1" required>
+           
+            <label for="text2">Last Name</label>
+            <input type="text" id="text2" required>
+        </div>
+        
+        
+        <label for="email1">E-mail</label>
+        <input type="email" id="email1" required>
+        <p>We'll never share your email with anyone else.</p>
+            
+        <div>
+            <label for="choice1">Male</label>
+            <input type="radio" name="test" id="choice1" value="Male">
+    
+            <label for="choice2">Female</label>
+            <input type="radio" name="test" id="choice2" value="Female">
+        </div>
+    
+    
+        <label for="text3">Country</label>
+        <input name="text" id="text3" list="countries" placeholder="Select">
+        <datalist id="countries">
+            <option value="Ukraine">
+            <option value="England">
+            <option value="Germany">
+            <option value="USA">
+            <option value="France">
+        </datalist>
+    
+        <label for="text4">City</label>
+        <input type="text" id="text4">
+    
+        <div>
+            <button type="submit">Sing Up</button>
+            <p>By clicking the 'Sign Up' button, you confirm that you accept our <a href="#">Terms of Use</a> and  <a href="#">Privacy Policy</a></p>
+        </div>
+
+    </form>
+
+    <p>
+        <b>Have an account?</b> 
+        <a href="#">Log In</a>
+    </p>
+
+
+    <h2>Profile</h2>
+
+    <form id="Create_profile">
+
+        <img src="./img/photo.png" alt="Avatar">
+        <input type="file" name="Image" accept="Image/*"> 
+        <p>Up to 1 MB (300x300 px)</p>
+
+        <label for="text5">Name</label>
+        <input type="text" id="text5" required>
+
+        <label for="email2">E-mail</label>
+        <input type="email" id="email2" required>
+
+        <div>
+            <label for="text6">Country</label>
+            <input name="text" id="text6" list="countries1" placeholder="Select">
+                <datalist id="countries1">
+                    <option value="Ukraine">
+                    <option value="England">
+                    <option value="Germany">
+                    <option value="USA">
+                    <option value="France">
+                </datalist>
+    
+            <label for="text7">City</label>
+            <input type="text" id="text7">
+        </div>
+
+        <div>
+            <label for="text8">Zip Code</label>
+            <input type="text" id="text8" required>
+           
+            <label for="tel1">Phone Number</label>
+            <input type="tel" id="tel1" required>
+        </div>
+
+        <div>
+            <button type="submit">Update</button>
+        </div>
+
+    </form>
+    
+  
+   
+
+</body>
+</html>
