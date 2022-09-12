@@ -73,7 +73,7 @@ hr {
 }
 
 .info_about_me p:nth-child(odd) {
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .info_about_me p:first-child {
