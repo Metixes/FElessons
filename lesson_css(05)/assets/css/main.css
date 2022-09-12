@@ -1,0 +1,222 @@
+body {
+    font-family: "open sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #070707;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    color: #070707;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    color: #070707;
+}
+
+#home {
+    margin: 25px auto;
+    max-width: 496px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation a {
+    color: #828282;
+}
+
+.navigation a:hover {
+    color: #070707;
+}
+
+hr {
+    max-width: 970px;
+}
+
+.denis_novik {
+    margin: 12px auto 0;
+    max-width: 970px;
+}
+
+.denis_novik h1 {
+    margin-bottom: 50px;
+}
+
+#about_me {
+    background-color: #F6F6F6;
+}
+
+.info {
+    margin: 0 auto;
+    max-width: 970px;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.info_about_me {
+    margin: 50px auto 0;
+}
+
+.info_about_me p:nth-child(odd) {
+    padding-top: 20px;
+}
+
+.info_about_me p:first-child {
+    padding: 0;
+}
+
+.skills_info {
+    margin: 0 auto;
+    padding: 100px 0;
+    max-width: 970px;
+}
+
+.info_about_programs {
+    margin: 0 auto 50px;
+    max-width: 250px;
+
+    text-align: center;
+}
+
+.info_about_programs h2 {
+    margin-bottom: 20px;
+}
+
+.programs_skills {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.programs_skills p {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: #828282;
+}
+
+.mw_170px {
+    max-width: 170px;
+}
+
+.mw_170px .mb_25px {
+    margin-bottom: 25px;
+}
+
+.mb_25px {
+    margin-bottom: 25px;
+}
+
+.mw_170px .mt_60px {
+    margin-top: 60px;
+}
+
+.mb_20px {
+    margin-bottom: 20px;
+}
+
+#portfolio {
+    background-color: #E5E5E5;
+}
+
+.info_portfolio {
+    margin: 0 auto;
+    padding: 100px 0 30px;
+    max-width: 970px;
+    text-align: center;
+}
+
+.info_portfolio h2 {
+    margin-bottom: 50px;
+}
+
+.info_portfolio a {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration-line: underline;
+    color: #070707;
+}
+
+.mw_200px {
+    margin: 40px auto 70px;
+    max-width: 200px;
+}
+
+.info_portfolio p {
+    margin: 40px auto 70px;
+}
+
+.info_contacts {
+    margin: 0 auto;
+    padding: 100px 0;
+    max-width: 970px;
+    text-align: center;
+}
+
+.title_contacts {
+    margin: 0 auto 60px;
+    max-width: 280px;
+}
+
+.title_contacts h2 {
+    padding-bottom: 20px;
+}
+
+.info_links {
+    margin: 60px auto;
+    max-width: 310px;
+}
+
+.btn {
+    padding: 9.5px 16px;
+    border-radius: 22px;
+
+    background-color: #070707;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+.social_icons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.like_me_on{
+    margin: 60px auto 0;
+    max-width: 200px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #828282;
+}
+
+.like_me_on a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #828282;
+}
