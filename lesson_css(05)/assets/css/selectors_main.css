@@ -34,6 +34,7 @@ label {
 /* коли задаю font-size спану менше ніж font-size лейблу, 
 тоді закреслення тексту стрибає вниз.*/
 span {
+    margin-left: 3px;
     font-size: 11px;
     line-height: 13px;
     color: #FFFFFF; 
