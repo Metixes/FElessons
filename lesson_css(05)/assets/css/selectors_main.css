@@ -1,0 +1,129 @@
+body {
+    font-family: "roboto";
+    box-sizing: border-box;
+    border: none;
+}
+
+header {
+    padding: 19px 0 12px;
+    background-color: #4A4F56;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FF8984;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FF8984;
+}
+
+label {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+/* коли задаю сману font-size спану менше ніж font-size лейблу, 
+тоді закреслення тексту стрибаю вниз.*/
+span {
+    font-size: 11px;
+    line-height: 13px;
+    color: #FFFFFF; 
+}
+
+main,
+footer {
+    background-color: #3B3F45;;
+}
+
+main {
+    padding: 20px 0 45px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 534px;
+}
+
+div {
+    display: flex;
+    background-color: #88839E;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+
+div:nth-child(even){
+    background-color: #7A7593;
+}
+
+input[type="checkbox"] {
+    margin-left: 12px;
+}
+
+label {
+    padding: 12px;
+    display: block;
+    width: 100%;
+}
+
+
+
+
+.btn {
+    margin: 0 auto;
+    padding-bottom: 45px;
+    max-width: 534px;
+}
+
+button {
+    padding: 12px 212px;
+    background-color: #4A4F56;
+    border: none;
+    text-align: center;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FF8984;
+}
+
+button:hover {
+    background-color: #9B96AC;
+    opacity: 0.7;
+    transition: all .1s ease-in;
+}
+
+div:hover {
+    background-color: #625E77;
+    transition: all .1s ease-in;
+    border-top: 3px solid #FFFFFF;
+    border-bottom: 3px solid #FFFFFF;
+}
+
+input:checked~label {
+    text-decoration: line-through;
+    color: #9B96AC;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
