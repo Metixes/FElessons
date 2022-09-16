@@ -25,21 +25,6 @@ h2 {
     color: #FF8984;
 }
 
-label {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    color: #FFFFFF;
-}
-/* коли задаю font-size спану менше ніж font-size лейблу, 
-тоді закреслення тексту стрибає вниз.*/
-span {
-    font-size: 11px;
-    margin-left: 3px;
-    line-height: 13px;
-    color: #FFFFFF; 
-}
-
 main,
 footer {
     background-color: #3B3F45;;
@@ -65,18 +50,33 @@ div:nth-child(even){
     background-color: #7A7593;
 }
 
-input[type="checkbox"] {
-    margin-left: 12px;
-}
-
 label {
     padding: 12px;
     display: block;
     width: 100%;
 }
 
+input:checked~span {
+    text-decoration: line-through;
+    color: #9B96AC;
+}
 
+span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF; 
+}
 
+.fs_11px {
+    font-size: 11px;
+    line-height: 13px;
+    color: #FFFFFF;
+}
+
+input[type="checkbox"] {
+    margin-right: 16px;
+}
 
 .btn {
     margin: 0 auto;
@@ -113,10 +113,7 @@ div:hover {
     border-bottom: 3px solid #FFFFFF;
 }
 
-input:checked~label {
-    text-decoration: line-through;
-    color: #9B96AC;
-}
+
 
 
 
