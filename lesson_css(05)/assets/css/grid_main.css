@@ -1,13 +1,12 @@
 section {
-    margin: 0 auto;
+    margin: 120px auto;
     max-width: 1170px;
 }
 
 h2 {
-    max-width: 664px;
-    margin: 120px auto 80px auto;
+    margin: 0 auto 80px;
+    text-align: center;
     font-family: 'Delius Unicase';
-    font-weight: 400;
     font-size: 36px;
     line-height: 45px;
     letter-spacing: 0.05em;
@@ -134,8 +133,160 @@ button:hover {
 }
 
 .grid_container2 .item1 {
-    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url();
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../images/to_lesson_08/images/Still_Life/image1.png);
+}
+
+.grid_container2 .item2 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../images/to_lesson_08/images/Still_Life/image2.png);
+
+}
+
+.grid_container2 .item3 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../images/to_lesson_08/images/Still_Life/image3.png);
+
+}
+
+.grid_container2 .item4 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../images/to_lesson_08/images/Still_Life/image4.png);
+
+}
+
+.grid_container2 .item5 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../images/to_lesson_08/images/Still_Life/image5.png);
+
+}
+
+.grid_container2 .item6 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../images/to_lesson_08/images/Still_Life/image6.png);
+
+}
+
+.grid_container2 .item1:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(../images/to_lesson_08/images/Still_Life/image1.png);
+}
+
+.grid_container2 .item2:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(../images/to_lesson_08/images/Still_Life/image2.png);
+}
+
+.grid_container2 .item3:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(../images/to_lesson_08/images/Still_Life/image3.png);
+}
+
+.grid_container2 .item4:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(../images/to_lesson_08/images/Still_Life/image4.png);
+}
+
+.grid_container2 .item5:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(../images/to_lesson_08/images/Still_Life/image5.png);
+}
+
+.grid_container2 .item6:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(../images/to_lesson_08/images/Still_Life/image6.png);
+}
+
+.grid_container3 {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: repeat(5, 370px);
+    grid-template-areas:
+    "img1 img2 img3"
+    "img4 img2 img5"
+    "img6 img7 img5"
+    "img6 img8 img8" 
+    "img9 img9 img10" 
+    ;
+}
+
+.grid_container3 .item1 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../images/to_lesson_08/images/Portrait_and_Fashion_Photography/image1.png);
     grid-area: img1;
+}
+
+.grid_container3 .item2 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../images/to_lesson_08/images/Portrait_and_Fashion_Photography/image2.png);
+    grid-area: img2;
+}
+
+.grid_container3 .item3 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../images/to_lesson_08/images/Portrait_and_Fashion_Photography/image3.png);
+    grid-area: img3;
+}
+
+.grid_container3 .item4 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../images/to_lesson_08/images/Portrait_and_Fashion_Photography/image4.png);
+    grid-area: img4;
+}
+
+.grid_container3 .item5 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../images/to_lesson_08/images/Portrait_and_Fashion_Photography/image5.png);
+    grid-area: img5;
+}
+
+.grid_container3 .item6 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../images/to_lesson_08/images/Portrait_and_Fashion_Photography/image6.png);
+    grid-area: img6;
+}
+
+.grid_container3 .item7 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../images/to_lesson_08/images/Portrait_and_Fashion_Photography/image7.png);
+    grid-area: img7;
+}
+
+.grid_container3 .item8 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../images/to_lesson_08/images/Portrait_and_Fashion_Photography/image8.png);
+    grid-area: img8;
+}
+
+.grid_container3 .item9 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../images/to_lesson_08/images/Portrait_and_Fashion_Photography/image9.png);
+    grid-area: img9;
+}
+
+.grid_container3 .item10 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../images/to_lesson_08/images/Portrait_and_Fashion_Photography/image10.png);
+    grid-area: img10;
+}
+
+.grid_container3 .item1:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(../images/to_lesson_08/images/Portrait_and_Fashion_Photography/image1.png);
+}
+
+.grid_container3 .item2:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(../images/to_lesson_08/images/Portrait_and_Fashion_Photography/image2.png);
+}
+
+.grid_container3 .item3:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(../images/to_lesson_08/images/Portrait_and_Fashion_Photography/image3.png);
+}
+
+.grid_container3 .item4:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(../images/to_lesson_08/images/Portrait_and_Fashion_Photography/image4.png);
+}
+
+.grid_container3 .item5:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(../images/to_lesson_08/images/Portrait_and_Fashion_Photography/image5.png);
+}
+
+.grid_container3 .item6:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(../images/to_lesson_08/images/Portrait_and_Fashion_Photography/image6.png);
+}
+
+.grid_container3 .item7:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(../images/to_lesson_08/images/Portrait_and_Fashion_Photography/image7.png);
+}
+
+.grid_container3 .item8:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(../images/to_lesson_08/images/Portrait_and_Fashion_Photography/image8.png);
+}
+
+.grid_container3 .item9:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(../images/to_lesson_08/images/Portrait_and_Fashion_Photography/image9.png);
+}
+
+.grid_container3 .item10:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(../images/to_lesson_08/images/Portrait_and_Fashion_Photography/image10.png);
 }
 
 
