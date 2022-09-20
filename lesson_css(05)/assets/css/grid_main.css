@@ -134,7 +134,7 @@ button:hover {
 }
 
 .grid_container2 .item1 {
-    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../images/to_lesson_08/images/);
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url();
     grid-area: img1;
 }
 
