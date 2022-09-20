@@ -1,0 +1,145 @@
+section {
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+h2 {
+    max-width: 664px;
+    margin: 120px auto 80px auto;
+    font-family: 'Delius Unicase';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+.grid_card {
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(224, 224, 224, 0.5);
+}
+
+.name_data, .btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btns {
+    visibility: hidden
+}
+
+p {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.date {
+    font-weight: 400;
+    color: #E0E0E0;
+}
+
+.grid_container1 {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: repeat(3, 370px);
+    grid-template-areas:
+    "img1 img2 img2"
+    "img3 img3 img4"
+    "img5 img6 img6" 
+    ;
+}
+
+.item1 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../images/to_lesson_08/images/Architectural_Photography/image1.png);
+    grid-area: img1;
+}
+.item2 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../images/to_lesson_08/images/Architectural_Photography/image2.png);
+    grid-area: img2;
+}
+.item3 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../images/to_lesson_08/images/Architectural_Photography/image3.png);
+    grid-area: img3;
+}
+.item4 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../images/to_lesson_08/images/Architectural_Photography/image4.png);
+    grid-area: img4;
+}
+.item5 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../images/to_lesson_08/images/Architectural_Photography/image5.png);
+    grid-area: img5;
+}
+.item6 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../images/to_lesson_08/images/Architectural_Photography/image6.png);
+    grid-area: img6;
+}
+
+.item1:hover{
+    background: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(../images/to_lesson_08/images/Architectural_Photography/image1.png);
+}
+
+.item2:hover{
+    background: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(../images/to_lesson_08/images/Architectural_Photography/image2.png);
+}
+
+.item3:hover{
+    background: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(../images/to_lesson_08/images/Architectural_Photography/image3.png);
+}
+
+.item4:hover{
+    background: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(../images/to_lesson_08/images/Architectural_Photography/image4.png);
+}
+
+.item5:hover{
+    background: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(../images/to_lesson_08/images/Architectural_Photography/image5.png);
+}
+
+.item6:hover{
+    background: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(../images/to_lesson_08/images/Architectural_Photography/image6.png);
+}
+
+.grid_card:hover .btns{
+    visibility: visible;
+}
+
+button:hover {
+    background-color: #E0E0E0;
+}
+
+.grid_container2 {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: repeat(4, 370px);
+    grid-template-areas:
+    "img1 img2 img2"
+    "img3 img3 img4"
+    "img3 img3 img4"
+    "img5 img5 img6" 
+    ;
+}
+
+.grid_container2 .item1 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../images/to_lesson_08/images/);
+    grid-area: img1;
+}
+
+
+
+
+
+
