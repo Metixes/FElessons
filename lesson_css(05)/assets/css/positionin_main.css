@@ -15,6 +15,7 @@ body {
 }
 
 .header {
+    padding-bottom: 70px;
     background-color: #ffff;
     z-index: 2;
 }
@@ -87,7 +88,7 @@ body {
     max-width: 67%;
 }
 
-.bg_img {
+.main__container__img {
     position: fixed;
     top: 150px;
     right: 0;
@@ -106,6 +107,22 @@ body {
     text-decoration: none;
     color: #000000;
     border-bottom: 1px solid #BDBDBD;
+}
+
+#introduction {
+    scroll-margin-top: 150px;
+}
+
+#core_components {
+    scroll-margin-top: 150px;
+}
+
+#react_fundamentals {
+    scroll-margin-top: 150px;
+}
+
+#handling_text {
+    scroll-margin-top: 150px;
 }
 
 .aside__link:hover {
@@ -145,12 +162,15 @@ body {
 }
 
 .title__sup {
+    margin-left: 10px;
     font-family: 'Farro';
     font-weight: 300;
     font-size: 2rem;
     line-height: 3rem;
     letter-spacing: 0.04em;
     text-transform: none;
+    position: absolute;
+    top: 22px;
 }
 
 .subtitle {
