@@ -31,6 +31,10 @@ body {
     --lighten-green: #F4FEFF;
 }
 
+.header {
+    border: 1px solid var(--light__white);
+}
+
 .header__logo {
     margin: 0 auto;
     max-width: 1170px;
@@ -39,7 +43,7 @@ body {
 
 .logo {
     width: 200px;
-    height: 36px;
+    height: 35px;
 }
 
 .main__container {
