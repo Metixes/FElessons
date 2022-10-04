@@ -121,29 +121,29 @@ body {
 }
 
 .button__tw {
-    background-image: url(../images/to_lesson_09/main_img_and_icons/icon_twitter.svg);
+    background-image: url(../images/main_img_and_icons/icon_twitter.svg);
 }
 
 .button__tw:hover {
-    background-image: url(../images/to_lesson_09/footer_icons/icon_twitter.svg);
+    background-image: url(../images/footer_icons/icon_twitter.svg);
     background-color: #fff;
 }
 
 .button__fb {
-    background-image: url(../images/to_lesson_09/main_img_and_icons/icon_facebook.svg);
+    background-image: url(../images/main_img_and_icons/icon_facebook.svg);
 }
 
 .button__fb:hover {
-    background-image: url(../images/to_lesson_09/footer_icons/icon_facebook.svg);
+    background-image: url(../images/footer_icons/icon_facebook.svg);
     background-color: #fff;
 }
 
 .button__inst {
-    background-image: url(../images/to_lesson_09/main_img_and_icons/icon_instagram.svg);
+    background-image: url(../images/main_img_and_icons/icon_instagram.svg);
 }
 
 .button__inst:hover {
-    background-image: url(../images/to_lesson_09/footer_icons/icon_instagram.svg);
+    background-image: url(../images/footer_icons/icon_instagram.svg);
     background-color: #fff;
 }
 
@@ -152,7 +152,7 @@ body {
 }
 
 .card1 {
-    background: url(../images/to_lesson_09/main_img_and_icons/card_photo2.png);
+    background: url(../images/main_img_and_icons/card_photo2.png);
     background-repeat: no-repeat;
 }
 
@@ -162,7 +162,7 @@ body {
 }
 
 .card2 {
-    background: url(../images/to_lesson_09/main_img_and_icons/card_photo2.png);
+    background: url(../images/main_img_and_icons/card_photo2.png);
     background-repeat: no-repeat;
 }
 
@@ -172,7 +172,7 @@ body {
 }
 
 .card3 {
-    background: url(../images/to_lesson_09/main_img_and_icons/card_photo3.png);
+    background: url(../images/main_img_and_icons/card_photo3.png);
     background-repeat: no-repeat;
 }
 
@@ -182,7 +182,7 @@ body {
 }
 
 .card4 {
-    background: url(../images/to_lesson_09/main_img_and_icons/card_photo4.png);
+    background: url(../images/main_img_and_icons/card_photo4.png);
     background-repeat: no-repeat;
 }
 
@@ -254,23 +254,23 @@ body {
 }
 
 .footer__button_tw {
-    background-image: url(../images/to_lesson_09/footer_icons/icon_twitter.svg);
+    background-image: url(../images/footer_icons/icon_twitter.svg);
 }
 
 .footer__button_fb {
-    background-image: url(../images/to_lesson_09/footer_icons/icon_facebook.svg);
+    background-image: url(../images/footer_icons/icon_facebook.svg);
 }
 
 .footer__button_inst {
-    background-image: url(../images/to_lesson_09/footer_icons/icon_instagram.svg);
+    background-image: url(../images/footer_icons/icon_instagram.svg);
 }
 
 .footer__button_in {
-    background-image: url(../images/to_lesson_09/footer_icons/linkedin_icon.svg);
+    background-image: url(../images/footer_icons/linkedin_icon.svg);
 }
 
 .footer__button_tg {
-    background-image: url(../images/to_lesson_09/footer_icons/telegram_icon.svg);
+    background-image: url(../images/footer_icons/telegram_icon.svg);
 }
 
 .footer__button_view:hover {
@@ -279,22 +279,22 @@ body {
 }
 
 .footer__button_tw:hover {
-    background-image: url(../images/to_lesson_09/footer_icons/twitter_icon_white.svg);
+    background-image: url(../images/footer_icons/twitter_icon_white.svg);
 }
 
 .footer__button_fb:hover {
-    background-image: url(../images/to_lesson_09/footer_icons/facebook_icon_white.svg);
+    background-image: url(../images/footer_icons/facebook_icon_white.svg);
 }
 
 .footer__button_inst:hover {
-    background-image: url(../images/to_lesson_09/footer_icons/instagram_icon_white.svg);
+    background-image: url(../images/footer_icons/instagram_icon_white.svg);
 }
 
 .footer__button_in:hover {
-    background-image: url(../images/to_lesson_09/footer_icons/linkedin_icon_white.svg);
+    background-image: url(../images/footer_icons/linkedin_icon_white.svg);
 }
 
 .footer__button_tg:hover {
-    background-image: url(../images/to_lesson_09/footer_icons/telegram_icon_white.svg);
+    background-image: url(../images/footer_icons/telegram_icon_white.svg);
 }
 
