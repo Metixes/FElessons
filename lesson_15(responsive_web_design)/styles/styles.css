@@ -209,12 +209,19 @@ body {
 }
 .container .blog .info__picture {
   max-width: 50%;
+  width: 100%;
 }
 .container .blog .info__picture__img {
   width: 100%;
 }
 .container .blog .info .info__description {
   max-width: 50%;
+  width: 100%;
+}
+.container .blog .info .info__description__flex-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 .container .blog .info .description {
   max-width: 450px;
@@ -754,7 +761,6 @@ body {
 }
 .footer .social-icons__links:hover {
   background-color: #565656;
-  border: none;
 }
 .footer .social-icons__links:hover .social-icons__links__fill {
   fill: #FFFFFF;
