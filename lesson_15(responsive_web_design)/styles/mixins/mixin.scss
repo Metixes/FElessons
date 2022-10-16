@@ -1,124 +1,17 @@
 
-@mixin font-rhd-title-h1 {
-        font-family: 'Red Hat Display';
-        font-weight: 600;
-        font-size: 4.8rem;
-        line-height: 6.4rem;
-        letter-spacing: 0.05em;
-        color: $black;
-}
-
-@mixin font-rhd-title-h2 {
-        font-family: 'Red Hat Display';
-        font-size: 4.8rem;
-        line-height: 6.4rem;
-        letter-spacing: 0.05em;
-        color: $black;
-}
-
-@mixin font-title-fs24px {
-        font-family: 'Red Hat Display';
-        font-weight: 500;
-        font-size: 2.4rem;
-        line-height: 166%;
-        letter-spacing: 0.1em;
-        color: $black;
-}
-
-@mixin font-title-fs23px {
-        font-family: 'Red Hat Display';
-        font-weight: 500;
-        font-size: 2.3rem;
-        line-height: 166%;
-        letter-spacing: 0.1em;
-        color: $black;
-}
-
-@mixin font-title-fs23px-fw400 {
-        font-family: 'Red Hat Display';
-        font-weight: 400;
-        font-size: 2.3rem;
-        line-height: 166%;
-        letter-spacing: 0.1em;
-        color: $black;
-}
-
-@mixin font-title-fs22px {
-        font-family: 'Red Hat Display';
-        font-weight: 500;
-        font-size: 2.2rem;
-        line-height: 166%;
-        letter-spacing: 0.1em;
-        color: $black;
-}
-
-
-@mixin font-title-fs28px {
-        font-family: 'Red Hat Display';
-        font-weight: 600;
-        font-size: 2.8rem;
-        line-height: 166%;
-        letter-spacing: 0.1em;
-        color: $black;
-}
-
-@mixin font-lato-text-fz19 {
-        font-family: 'Lato';
-        font-size: 1.9rem;
-        line-height: 3.2rem;
-        letter-spacing: 0.05em;
-        color: $dark-gray;
-}
-
-@mixin font-lato-link {
-        font-family: 'Lato';
-        font-weight: 700;
-        font-size: 1.6rem;
-        line-height: 166%;
-        letter-spacing: 0.1em;
-        color: $white;
-}
-
-@mixin font-lato-data-span {
-        font-family: 'Lato';
-        font-size: 1.6rem;
-        line-height: 166%;
-        letter-spacing: 0.1em;
-        color: $middle-gray;
-}
-
-@mixin font-lato-text {
-        font-family: 'Lato';
-        font-size: 1.6rem;
-        line-height: 166%;
-        letter-spacing: 0.05em;
-        color: $dark-gray;
-}
-
-@mixin font-nav-lato {
-        font-family: 'Lato';
-        font-size: 1.4rem;
-        line-height: 1.7rem;
-        letter-spacing: 0.3em;
-        text-transform: uppercase;
-        color: $black;
-}
-
-@mixin font-input-lato {
-        font-family: 'Lato';
-        font-size: 1.2rem;
-        line-height: 166.3%;
-        letter-spacing: 0.1em;
-        color: $middle-gray;
-}
-
 @mixin max-width-percents($width,$cont) {
-        max-width: calc($width / $cont * 100%);
+        max-width: $width / $cont * 100%;
 }
 
-@mixin max-width-margin-0-auto {
+@mixin container {
+        max-width: 1170px;
         margin: 0 auto; 
-        @include max-width-percents(1170,1440); 
+}
+
+@mixin df-center-jcsb {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 }
         
 
