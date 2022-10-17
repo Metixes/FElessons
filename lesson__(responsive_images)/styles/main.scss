@@ -155,7 +155,7 @@ body {
 
 .footer {
     background-color: $light-gray;
-    padding: 70px 0;
+    padding: 70px 0 30px;
 
     .block {
         @include main-container;
@@ -176,7 +176,7 @@ body {
 
             &__tel {
                 display: block;
-                margin: 30px 0 15px;
+                margin: 30px 0 14.71px;
                 text-decoration: none;
 
                 font-family: 'Lato';
@@ -255,6 +255,10 @@ body {
 
             &__contact {
                 text-align: center;
+
+                &__tel {
+                    margin: 20px 0 15px;
+                }
             }
         }
 

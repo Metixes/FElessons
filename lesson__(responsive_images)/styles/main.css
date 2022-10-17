@@ -156,7 +156,7 @@ body {
 
 .footer {
   background-color: #F4F4F4;
-  padding: 70px 0;
+  padding: 70px 0 30px;
 }
 .footer .block {
   max-width: 81.2%;
@@ -177,7 +177,7 @@ body {
 }
 .footer .block__contact__tel {
   display: block;
-  margin: 30px 0 15px;
+  margin: 30px 0 14.71px;
   text-decoration: none;
   font-family: "Lato";
   font-size: 16px;
@@ -241,6 +241,9 @@ body {
   }
   .footer .block__contact {
     text-align: center;
+  }
+  .footer .block__contact__tel {
+    margin: 20px 0 15px;
   }
   .footer__copyright {
     margin-top: 40px;
