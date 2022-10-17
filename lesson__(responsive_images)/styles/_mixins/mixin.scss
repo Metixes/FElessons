@@ -1,0 +1,57 @@
+@mixin header-text {
+    max-width: 81.2%;
+    margin: 0 auto;
+    padding: 38px 0;
+
+    font-family: 'Lato';
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.5em;
+    color: $black;
+
+}
+
+@mixin main-container {
+    max-width: 81.2%;
+    margin: 0 auto;
+}
+
+@mixin section {
+    & {
+        margin-bottom: 90px;
+    }
+
+    &__title {
+        margin-bottom: 50px;
+
+        font-family: 'Red Hat Display';
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 166%;
+        letter-spacing: 0.1em;
+        color: $black; 
+    }
+
+    &__picture {
+            
+        &__img {
+            max-width: 100%;
+        }
+    }
+
+    &__subtitle {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 100%;
+        margin-top: 20px;
+
+        font-family: 'Lato';
+        font-size: 19px;
+        line-height: 32px;
+        letter-spacing: 0.05em;
+        color: $dark-gray;
+    }
+
+}
+

@@ -1,0 +1,291 @@
+@import './_variables/variables.scss';
+@import './_mixins/mixin.scss';
+
+
+body {
+    font-family: "Lato", "Red Hat Display", "sans serif";
+    font-size: 19px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.header {
+    &__text {
+        @include header-text;
+
+        @media screen and (max-width: 1024px) { 
+            max-width: 91.1%;
+            margin-bottom: 50px;
+            padding: 18px 0;
+        }
+     
+        @media screen and (max-width: 600px) {
+            max-width: 93.7%;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.main__container {
+    @include main-container;
+
+    @media screen and (max-width: 1024px) {
+        max-width: 91.1%;
+    }
+
+    @media screen and (max-width: 600px) {
+        max-width: 93.7%;
+    }
+
+    .ai {
+    
+        &__title {
+            margin-bottom: 70px;
+    
+            font-family: 'Red Hat Display';
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 64px;
+            letter-spacing: 0.05em;
+            color: $black;
+        }
+    
+        &__picture {
+            
+            &__img {
+                max-width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            &__title {
+                margin-bottom: 50px;
+
+                font-size: 33px;
+                line-height: 50px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            &__title {
+                margin-bottom: 40px;
+
+                font-size: 30px;
+                line-height: 50px;
+            }
+        }
+    
+    }
+
+    .project {
+        margin: 90px 0;
+
+        &__title {
+            margin-bottom: 50px;
+
+            font-family: 'Red Hat Display';
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 166%;
+            letter-spacing: 0.1em;
+            color: $black;
+        }
+
+        &__subtitle {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            max-width: 48.7%;
+
+            font-family: 'Lato';
+            font-size: 19px;
+            line-height: 32px;
+            letter-spacing: 0.05em;
+            color: $dark-gray;
+
+        }
+
+        @media screen and (max-width: 1024px) {
+            & {
+                margin: 90px 0 70px;
+            }
+
+            &__subtitle {
+                max-width: 100%;
+            }   
+        }
+
+        @media screen and (max-width: 600px) {
+            & {
+                margin: 70px 0 70px;
+            }
+
+            &__title {
+                margin-bottom: 40px;
+                font-size: 26px;
+            }
+
+            &__subtitle {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .section {
+        @include section;
+
+        @media screen and (max-width: 1024px) {
+            & {
+                margin-bottom: 70px;
+            } 
+        }
+
+        @media screen and (max-width: 600px) {
+            &__title {
+                margin-bottom: 40px;
+                font-size: 26px;
+            }
+
+            &__subtitle {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: $light-gray;
+    padding: 70px 0;
+
+    .block {
+        @include main-container;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__contact {
+            max-width: 375px;
+
+            &__title {
+                font-family: 'Red Hat Display';
+                font-size: 48px;
+                line-height: 64px;
+                letter-spacing: 0.05em;
+                color: $black;
+            }
+
+            &__tel {
+                display: block;
+                margin: 30px 0 15px;
+                text-decoration: none;
+
+                font-family: 'Lato';
+                font-size: 16px;
+                line-height: 166%;
+                letter-spacing: 0.1em;
+                color: $black;
+            }
+
+            &__mail {
+                display: block;
+                text-decoration: none;
+
+                font-family: 'Lato';
+                font-size: 16px;
+                line-height: 166%;
+                letter-spacing: 0.1em;
+                color: $black;
+            }
+        }
+    }
+
+    .social-icons {
+        display: flex;
+        align-items: center;
+        max-width: 269px;
+
+        &__links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            background-color: $light-gray;
+            border: 1px solid $dark-gray;
+            transition: .5s ease;
+
+            & + .social-icons__links {
+                margin-left: 23px;
+            }
+
+            &__fill {
+                fill: $dark-gray;
+                transition: .5s ease;
+            }
+
+            &:hover {
+                background-color: $dark-gray;
+            }
+
+            &:hover .social-icons__links__fill {
+                fill: $white;
+            }
+        }
+    }
+
+    &__copyright {
+        margin-top: 20px;
+        text-align: center;
+
+        font-family: 'Lato';
+        font-size: 12px;
+        line-height: 166%;
+        letter-spacing: 0.1em;
+        color: $black;
+    }
+
+    @media screen and (max-width: 1024px) {
+        & {
+            padding: 50px 0;
+        }
+
+        .block {
+            flex-direction: column;
+            gap: 40px;
+
+            &__contact {
+                text-align: center;
+            }
+        }
+
+        &__copyright {
+            margin-top: 40px;
+        }
+
+    }
+
+    @media screen and (max-width: 600px) {
+        .block__contact {
+
+            &__title {
+                font-size: 32px;
+                line-height: 42px;
+            }
+
+            &__tel {
+                font-size: 18px;
+            }
+
+            &__mail {
+                font-size: 18px;
+            }
+        }
+
+        &__copyright {
+            font-size: 16px;
+            padding: 0 10px 0;
+        }
+    }
+    
+}
+
