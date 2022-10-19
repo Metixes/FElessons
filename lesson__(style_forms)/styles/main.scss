@@ -8,3 +8,206 @@ body {
     color: #545454;
 }
 
+.main {
+    background-color: $dark-white;
+    height: 100vh;
+    padding: 55px 0;
+    justify-content: center;
+    
+    &__container {
+       @include container;
+       display: flex;
+       justify-content: center;
+       gap: 30px;
+    }
+
+    &__section {
+        max-width: 570px;
+        background-color: $white;
+        border-radius: 6px;
+    }
+
+    .account {
+        @include account;
+        margin: 34px 35px 16px;
+
+        &__title {
+            @include account__title;
+        }
+
+        .inner {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            max-width: 500px;
+    
+            &__inputs {
+                @include inner__inputs;
+                
+                &--input-w100 {
+                    width: 100%;
+                }
+
+                &__subtitle {
+                    margin-top: 7px;
+        
+                    font-family: 'Roboto';
+                    font-size: 13px;
+                    line-height: 18px;
+                    letter-spacing: -0.1px;
+                    color: $ligner-gray;
+                }
+
+            }
+        }
+
+        &__btn {
+            @include account__btn;
+
+            &__update {
+                padding: 8px 51px;
+                max-width: 150px;
+            }
+        }
+
+        &__links {
+            max-width: 410px;
+            margin: 0 auto;
+            text-align: center;
+
+            &__text {
+                font-family: 'Roboto';
+                font-size: 13px;
+                line-height: 18px;
+                letter-spacing: -0.1px;
+                color: $ligner-gray;
+
+                &__link {
+                    text-decoration: none;
+                    color: $blue;
+                }
+            }
+        }
+
+        &__custom {
+
+            &__radio {
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+            }
+              
+            &__radio+label {
+                display: inline-flex;
+                align-items: center;
+                user-select: none;
+                &:last-child {
+                    margin-left: 20px;
+                }
+            }
+              
+            &__radio+label::before {
+                content: '';
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                border: 1px solid #adb5bd;
+                border-radius: 50%;
+                margin-right: 8px;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: 50% 50%;
+            }
+
+            &__radio:focus+label::before {
+                box-shadow: $blue;
+            }
+
+            &__radio:checked+label::before {
+                border-color: $blue;
+                background-color: $blue;
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+            }
+
+            &__radio:disabled+label::before {
+                background-color: $white;
+            }
+        }
+    }
+
+    .log-in {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 177px;
+        margin: 20px auto 16px;
+
+        font-family: 'Roboto';
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: -0.2px;
+        color: $dark-gray;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 504px;
+            height: 1px;
+            bottom: 42px;
+            background-color: $light-gray;
+        }
+
+        &__link {
+            margin-left: 20px;
+            text-decoration: none;
+            color: $blue;
+        }
+    }
+
+    .profile {
+        display: flex;
+        max-width: 504px;
+        &__photo {
+            max-width: 80px;
+            &__img {
+                width: 100%;
+                border-radius: 50%;
+                background-color: $light-gray;
+            }
+        }
+
+        &__load-photo {
+            display: flex;
+            flex-direction: column;
+            max-width: 246px;
+            margin: 0 10px 0 20px;
+        }
+
+        &__btn {
+            width: 30px;
+            height: 30px;
+            background-color: $white;
+            border: 1px solid $ligner-gray;
+            border-radius: 6px;
+            transition: .5s linear;
+
+            &__svg-fill {
+                fill:$ligner-gray;
+                transition: .5s linear;
+            }
+
+
+
+            &:hover .profile__btn__svg-fill,
+            &:hover {
+                fill: $dark-gray;
+                border-color: $dark-gray;
+            }
+        }
+    }
+}
+
+
+
+

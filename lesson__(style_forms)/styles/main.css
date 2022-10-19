@@ -3,4 +3,208 @@ body {
   line-height: 22px;
   font-family: "Roboto", "Inter", "san serif";
   color: #545454;
+}
+
+.main {
+  background-color: #F7F7F7;
+  height: 100vh;
+  padding: 55px 0;
+  justify-content: center;
+}
+.main__container {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.main__section {
+  max-width: 570px;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+}
+.main .account {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 504px;
+  margin: 34px 35px 16px;
+}
+.main .account__title {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #1C1C1C;
+}
+.main .account .inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  max-width: 500px;
+}
+.main .account .inner__inputs {
+  display: flex;
+  flex-direction: column;
+  width: 245px;
+}
+.main .account .inner__inputs__label {
+  margin-bottom: 7px;
+  font-family: "Roboto";
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+  color: #545454;
+}
+.main .account .inner__inputs__input {
+  padding: 7px 10px;
+  height: 24px;
+  border-radius: 6px;
+  border: 1px solid #E4E4E4;
+  transition: 0.5s ease;
+}
+.main .account .inner__inputs__input:focus, .main .account .inner__inputs__input:active {
+  border-color: #007BFF;
+}
+.main .account .inner__inputs--input-w100 {
+  width: 100%;
+}
+.main .account .inner__inputs__subtitle {
+  margin-top: 7px;
+  font-family: "Roboto";
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.1px;
+  color: #969696;
+}
+.main .account__btn {
+  padding: 8px 224px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007BFF;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.1px;
+  color: #FFFFFF;
+}
+.main .account__btn__update {
+  padding: 8px 51px;
+  max-width: 150px;
+}
+.main .account__links {
+  max-width: 410px;
+  margin: 0 auto;
+  text-align: center;
+}
+.main .account__links__text {
+  font-family: "Roboto";
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.1px;
+  color: #969696;
+}
+.main .account__links__text__link {
+  text-decoration: none;
+  color: #007BFF;
+}
+.main .account__custom__radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.main .account__custom__radio + label {
+  display: inline-flex;
+  align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.main .account__custom__radio + label:last-child {
+  margin-left: 20px;
+}
+.main .account__custom__radio + label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #adb5bd;
+  border-radius: 50%;
+  margin-right: 8px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.main .account__custom__radio:focus + label::before {
+  box-shadow: #007BFF;
+}
+.main .account__custom__radio:checked + label::before {
+  border-color: #007BFF;
+  background-color: #007BFF;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+.main .account__custom__radio:disabled + label::before {
+  background-color: #FFFFFF;
+}
+.main .log-in {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 177px;
+  margin: 20px auto 16px;
+  font-family: "Roboto";
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+  color: #545454;
+}
+.main .log-in::before {
+  position: absolute;
+  content: "";
+  width: 504px;
+  height: 1px;
+  bottom: 42px;
+  background-color: #E4E4E4;
+}
+.main .log-in__link {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #007BFF;
+}
+.main .profile {
+  display: flex;
+  max-width: 504px;
+}
+.main .profile__photo {
+  max-width: 80px;
+}
+.main .profile__photo__img {
+  width: 100%;
+  border-radius: 50%;
+  background-color: #E4E4E4;
+}
+.main .profile__load-photo {
+  display: flex;
+  flex-direction: column;
+  max-width: 246px;
+  margin: 0 10px 0 20px;
+}
+.main .profile__btn {
+  width: 30px;
+  height: 30px;
+  background-color: #FFFFFF;
+  border: 1px solid #969696;
+  border-radius: 6px;
+  transition: 0.5s linear;
+}
+.main .profile__btn__svg-fill {
+  fill: #969696;
+  transition: 0.5s linear;
+}
+.main .profile__btn:hover .profile__btn__svg-fill, .main .profile__btn:hover {
+  fill: #545454;
+  border-color: #545454;
 }/*# sourceMappingURL=main.css.map */

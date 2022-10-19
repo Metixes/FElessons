@@ -6,137 +6,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
     
     <main class="main">
         <div class="main__container">
-            <section class="main__form account">
-                <div class="account__form form">
-                    <h1 class="form__title">
-                        Create an Account
-                    </h1>
-                    <div class="form__name">
-                        <div class="">
-                            <label for="text1">First Name</label>
-                            <input type="text" id="text1" required>
+            <section class="main__section">
+                <form class="account" method="get" action="#" autocomplete="off">
+                    <h2 class="account__title">Create an Account</h2>
+                    <div class="account__inner inner">
+                        <div class="inner__inputs">
+                            <label class="inner__inputs__label" for="text-1">First Name</label>
+                            <input class="inner__inputs__input" name="name" type="text" id="text-1" required>
                         </div>
-                        <div>
-                            <label for="text1">First Name</label>
-                            <input type="text" id="text1" required>
+
+                        <div class="inner__inputs">
+                            <label class="inner__inputs__label" for="text-2">Last Name</label>
+                            <input class="inner__inputs__input" name="last-name" type="text" id="text-2" required>
                         </div>
                     </div>
-                </div>
+
+                    <div class="inner__inputs inner__inputs--input-w100">
+                        <label class="inner__inputs__label" for="email">E-mail</label>
+                        <input class="inner__inputs__input inner__inputs__input-w100" name="mail" type="email" id="email-1" required>
+                        <p class="inner__inputs__subtitle">We'll never share your email with anyone else.</p>
+                    </div>
+
+                    <div class="accoubt__custom">
+                        <input class="account__custom__radio" type="radio" name="radio-choice-1" id="choice1" value="Male">
+                        <label for="choice1">Male</label>
+                        
+                        <input class="account__custom__radio" type="radio" name="raio-choice-2" id="choice2" value="Female">
+                        <label for="choice2">Female</label>
+                    </div>
+
+                    <div class="account__inner inner">
+                        <div class="inner__inputs">
+                            <label class="inner__inputs__label" for="country">Country</label>
+                            <input class="inner__inputs__input" name="country-choice" id="country" list="countries" placeholder="Select">
+                            <datalist id="countries">
+                                <option value="Ukraine">
+                                <option value="England">
+                                <option value="Germany">
+                                <option value="USA">
+                                <option value="France">
+                            </datalist>
+                        </div>
+                        <div class="inner__inputs">
+                            <label class="inner__inputs__label" for="city">City</label>
+                            <input class="inner__inputs__input" name="city" type="text" id="city">
+                        </div>  
+                    </div>
+
+                    <button class="account__btn" type="submit">Sing Up</button>
+
+                    <div class="account__links">
+                        <p class="account__links__text">
+                            By clicking the 'Sign Up' button, you confirm that you accept our 
+                        </p>
+                        <p class="account__links__text">
+                            <a class="account__links__text__link" href="#" target="_blank">Terms of Use</a> 
+                            and  
+                            <a class="account__links__text__link" href="#" target="_blank">Privacy Policy</a>
+                        </p>
+                    </div>
+                </form>
             </section>
+            <section class="main__section">
+                <form class="account" method="get" action="#" autocomplete="off">
+                    <h2 class="account__title">Profile</h2>
 
-            <section class="main__form profile">
-                <div class="profile__form form">
-                    <h1 class="form__title">
-                        Profile
-                    </h1>
-                    <div class="form__name form__name-mail">
-
+                    <div class="account__profile profile">
+                        <div class="profile__photo">
+                            <img class="profile__photo__img" src="images/norb.jpg" alt="Beaver norb">
+                        </div>
+                        <div class="profile__load-photo">
+                            <input class="profile__load-photo__input" name="photo" type="file" id="photo">
+                            <label class="profile__load-photo__label" for="photo">Up to 1 MB (300x300 px)</label>
+                        </div>
+                        <button class="profile__btn" type="reset">
+                            <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="profile__btn__svg-fill" fill-rule="evenodd" clip-rule="evenodd" d="M1.00001 10.6667C1.00001 11.4 1.60001 12 2.33334 12H7.66668C8.40001 12 9.00001 11.4 9.00001 10.6667V2.66667H1.00001V10.6667V10.6667ZM9.66668 0.666667H7.33334L6.66668 0H3.33334L2.66668 0.666667H0.333344V2H9.66668V0.666667V0.666667Z"/>
+                            </svg>   
+                        </button>
                     </div>
-                </div>
+
+                    <div class="account__inner inner">
+                        <div class="inner__inputs">
+                            <label class="inner__inputs__label" for="text-1">Name</label>
+                            <input class="inner__inputs__input" name="name" type="text" id="text-1" required>
+                        </div>
+
+                        <div class="inner__inputs">
+                            <label class="inner__inputs__label" for="text-2">E-mail</label>
+                            <input class="inner__inputs__input" name="last-name" type="text" id="text-2" required>
+                        </div>
+                    </div>
+
+                    <div class="account__inner inner">
+                        <div class="inner__inputs">
+                            <label class="inner__inputs__label" for="country">Country</label>
+                            <input class="inner__inputs__input" name="country" id="country" list="countries" placeholder="Select">
+                            <datalist id="countries">
+                                <option value="Ukraine">
+                                <option value="England">
+                                <option value="Germany">
+                                <option value="USA">
+                                <option value="France">
+                            </datalist>
+                        </div>
+                        <div class="inner__inputs">
+                            <label class="inner__inputs__label" for="text4">City</label>
+                            <input class="inner__inputs__input" name="ciry" type="text" id="text4">
+                        </div>  
+                    </div>
+
+                    <div class="account__inner inner">
+                        <div class="inner__inputs">
+                            <label class="inner__inputs__label" for="text-1">Zip Code</label>
+                            <input class="inner__inputs__input" name="zip-code" type="text" id="text-1" required>
+                        </div>
+
+                        <div class="inner__inputs">
+                            <label class="inner__inputs__label" for="text-2">Phone Number</label>
+                            <input class="inner__inputs__input" name="phone" type="tel" id="text-2" required>
+                        </div>
+                    </div>
+                    <button class="account__btn account__btn__update" type="submit">Update</button>
+                </form>
             </section>
         </div>
     </main>
-    <h2>Create an Account</h2>
-
-    <form id="create_account">
-
-        <div>
-            <label for="text1">First Name</label>
-            <input type="text" id="text1" required>
-           
-            <label for="text2">Last Name</label>
-            <input type="text" id="text2" required>
-        </div>
-        
-        
-        <label for="email1">E-mail</label>
-        <input type="email" id="email1" required>
-        <p>We'll never share your email with anyone else.</p>
-            
-        <div>
-            <label for="choice1">Male</label>
-            <input type="radio" name="test" id="choice1" value="Male">
     
-            <label for="choice2">Female</label>
-            <input type="radio" name="test" id="choice2" value="Female">
-        </div>
-    
-    
-        <label for="text3">Country</label>
-        <input name="text" id="text3" list="countries" placeholder="Select">
-        <datalist id="countries">
-            <option value="Ukraine">
-            <option value="England">
-            <option value="Germany">
-            <option value="USA">
-            <option value="France">
-        </datalist>
-    
-        <label for="text4">City</label>
-        <input type="text" id="text4">
-    
-        <div>
-            <button type="submit">Sing Up</button>
-            <p>By clicking the 'Sign Up' button, you confirm that you accept our <a href="#">Terms of Use</a> and  <a href="#">Privacy Policy</a></p>
-        </div>
-
-    </form>
-
-    <p>
-        <b>Have an account?</b> 
-        <a href="#">Log In</a>
-    </p>
-
-
-    <h2>Profile</h2>
-
-    <form id="Create_profile">
-
-        <img src="./img/photo.png" alt="Avatar">
-        <input type="file" name="Image" accept="Image/*"> 
-        <p>Up to 1 MB (300x300 px)</p>
-
-        <label for="text5">Name</label>
-        <input type="text" id="text5" required>
-
-        <label for="email2">E-mail</label>
-        <input type="email" id="email2" required>
-
-        <div>
-            <label for="text6">Country</label>
-            <input name="text" id="text6" list="countries1" placeholder="Select">
-                <datalist id="countries1">
-                    <option value="Ukraine">
-                    <option value="England">
-                    <option value="Germany">
-                    <option value="USA">
-                    <option value="France">
-                </datalist>
-    
-            <label for="text7">City</label>
-            <input type="text" id="text7">
-        </div>
-
-        <div>
-            <label for="text8">Zip Code</label>
-            <input type="text" id="text8" required>
-           
-            <label for="tel1">Phone Number</label>
-            <input type="tel" id="tel1" required>
-        </div>
-
-        <div>
-            <button type="submit">Update</button>
-        </div>
-
-    </form>
 
 </body>
 </html>

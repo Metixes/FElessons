@@ -1,2 +1,63 @@
 
+@mixin container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+@mixin account {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    max-width: 504px;
+}
+
+@mixin account__title {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: $black;
+}
+
+@mixin inner__inputs {
+    display: flex;
+    flex-direction: column;
+    width: 245px;
+
+    &__label {
+        margin-bottom: 7px;
+        font-family: 'Roboto';
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: -0.2px;
+        color: $dark-gray;
+    }
+
+    &__input {
+        padding: 7px 10px;
+        height: 24px;
+        border-radius: 6px;
+        border: 1px solid $light-gray;
+        transition: .5s ease;
+
+        &:focus,
+        &:active {
+            border-color: $blue;
+        }
+    }
+}
+
+@mixin account__btn {
+    padding: 8px 224px;
+    border: none;
+    border-radius: 6px;
+    background-color: $blue;
+
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.1px;
+    color: $white;
+}
 
