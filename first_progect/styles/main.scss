@@ -1,0 +1,22 @@
+@import '_variables/variable';
+@import '_mixins/mixin';
+@import 'header';
+@import 'first-screen';
+@import 'benefits';
+@import 'quote';
+@import 'iframe';
+@import 'promises';
+@import 'reviews';
+@import 'contacts';
+@import 'footer';
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Lato', 'Playfair Display', 'sans serif';
+    font-size: 16px;
+    line-height: 26px;
+    color: #262A3F;
+}

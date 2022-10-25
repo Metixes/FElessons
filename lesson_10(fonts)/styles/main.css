@@ -61,6 +61,8 @@ body {
 }
 
 .title {
+    position: relative;
+    display: inline-flex;
     font-family: 'Francois One';
     font-size: 3.6rem;
     line-height: 4.8rem;
@@ -68,7 +70,43 @@ body {
     text-transform: uppercase;
 }
 
-.title__sup {
+.chapter-1::after {
+    position: absolute;
+    content: "Chapter 1";
+    right: -110px;
+    font-family: 'Farro';
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: 0.04em;
+    text-transform: none;
+}
+.chapter-2::after {
+    position: absolute;
+    content: "Chapter 2";
+    right: -110px;
+    font-family: 'Farro';
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: 0.04em;
+    text-transform: none;
+}
+.chapter-3::after {
+    position: absolute;
+    content: "Chapter 3";
+    right: -110px;
+    font-family: 'Farro';
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: 0.04em;
+    text-transform: none;
+}
+.chapter-4::after {
+    position: absolute;
+    content: "Chapter 4";
+    right: -110px;
     font-family: 'Farro';
     font-weight: 300;
     font-size: 2rem;

@@ -29,6 +29,7 @@ body {
     --middle-green: #CAEFF2;
     --light-green: #E1F4F5;
     --lighten-green: #F4FEFF;
+    --border-icon: rgba(61, 179, 112, 0.1);
 }
 
 .header {
@@ -87,7 +88,7 @@ body {
 }
 
 .card__info:hover .card__info__icon {
-    border: 1px solid var(--light__green);
+    border: 1px solid var(--border-icon);
     transition: all .5s ease;
 }
 

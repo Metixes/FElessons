@@ -4,10 +4,13 @@ body {
 
 .header {
     padding: 10px 0;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.header_container {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-bottom: 1px solid #BDBDBD;
 }
 
 .menu {

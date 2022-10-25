@@ -1,0 +1,155 @@
+// header fonts
+@mixin header-text-links {
+    font-family: 'Lato';
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    color: $middle-dark;
+}
+// main fonts
+@mixin font-main-title {
+    font-family: 'Playfair Display';
+    font-size: 44px;
+    line-height: 52px;
+    color: $middle-dark;
+
+    &__green-word {
+        font-style: italic;
+        color: $light-green;
+    }
+}
+
+@mixin font-main-text {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: $middle-dark;
+    opacity: 0.8;
+}
+
+@mixin font-main-link {
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $light-orange;
+}
+// font statistic
+@mixin font-statistic-title {
+    font-family: 'Playfair Display';
+    font-size: calc(30px + 18 * (100vw / 1440));
+    line-height: 72px;
+    color: $middle-dark;
+}
+
+@mixin font-statistic-text {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: $middle-dark;
+    opacity: 0.8;
+}
+// font benefits
+@mixin font-benefits-title {
+    font-family: 'Playfair Display';
+    font-size: 40px;
+    line-height: 48px;
+    color: $middle-dark;
+}
+// font-quote
+@mixin font-quote-text {
+    font-family: 'Lato';
+    font-size: 32px;
+    line-height: 46px;
+    letter-spacing: 0.04em;
+    color: $white;
+}
+
+@mixin font-quote-subtext {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    color: $white;
+}
+// font-video
+@mixin font-video-title {
+    font-family: 'Playfair Display';
+    font-size: 40px;
+    line-height: 48px;
+    color: $middle-dark;
+}
+// font promises
+@mixin font-promises-title {
+    font-family: 'Playfair Display';
+    font-size: 24px;
+    line-height: 48px;
+    color: $middle-dark;
+}
+// font reviews
+@mixin font-reviews-text {
+    font-family: 'Lato';
+    font-size: calc(8px + 8 * (100vw / 1440));
+    line-height: 26px;
+    color: $white;
+    opacity: 0.8;
+}
+// font contact
+@mixin font-contacts-text {
+    font-family: 'Playfair Display';
+    font-size: 40px;
+    line-height: 39px;
+    color: $middle-dark;
+}
+
+@mixin font-contacts-green {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-size: 40px;
+    line-height: 39px;
+    color: $light-green;
+}
+
+@mixin font-contact-plaseholder {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    color: $middle-dark;
+    opacity: 0.5;
+}
+// font footer
+@mixin font-footer-text {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 26px;
+    color: $middle-dark;
+    opacity: 0.6;
+}
+@mixin font-footer-links {
+    font-family: 'Lato';
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    color: $middle-dark;
+}
+
+
+
+@mixin bg-blur {
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.244636) 24.1%, rgba(255, 255, 255, 0) 47.19%), rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(4.5px);
+}
+
+@mixin wrapper-df-cen-sb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

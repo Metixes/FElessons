@@ -7,11 +7,6 @@ button {
     border: 1px solid transparent;
 }
 
-hr {
-    margin: 0;
-    background: rgba(188, 208, 229, 0.496913);
-}
-
 h1 {
     font-weight: 700;
     font-size: 44px;
@@ -221,6 +216,11 @@ button:nth-child(2) {
 }
 
                                 /* footer section */
+
+.footer {
+    padding: 70px 0;
+    border-top: 1px solid rgba(188, 208, 229, 0.496913);
+}
 
 .footer_container {
     margin: 70px auto ;

@@ -77,12 +77,12 @@ body {
   top: 0;
   left: 50%;
 }
-.profile .profile__image {
+.profile__image {
   position: relative;
   max-width: 430px;
   padding: 15px;
 }
-.profile .profile__image-line {
+.profile__image-line {
   position: absolute;
   min-width: 100px;
   min-height: 100px;
@@ -115,7 +115,7 @@ body {
   max-width: 430px;
   text-align: center;
 }
-.profile__info__name {
+.profile__name {
   padding-bottom: 30px;
   position: relative;
   font-family: "Roboto";
@@ -125,7 +125,7 @@ body {
   text-transform: capitalize;
   color: #666666;
 }
-.profile__info__name::after {
+.profile__name::after {
   position: absolute;
   content: "";
   width: 100px;
@@ -134,7 +134,7 @@ body {
   bottom: 0;
   left: 38%;
 }
-.profile__info__position {
+.profile__position {
   margin: 30px 0 30px;
   font-family: "Raleway";
   font-size: 2.4rem;
@@ -142,7 +142,7 @@ body {
   text-transform: capitalize;
   color: #666666;
 }
-.profile__info__social-icons {
+.profile__social-icons {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -151,21 +151,21 @@ body {
   border: 2px solid #CCCCCC;
   border-radius: 50%;
 }
-.profile__info__social-icons + .profile__info__social-icons {
+.profile__social-icons + .profile__social-icons {
   margin-left: 5px;
 }
-.profile__info__social-icons .social-icons {
+.profile__social-icons .social-icons {
   fill: #CCCCCC;
 }
-.profile__info__social-icons:hover {
+.profile__social-icons:hover {
   border-color: #FFCC00;
   transition: 1s ease;
 }
-.profile__info__social-icons:hover .social-icons {
+.profile__social-icons:hover .social-icons {
   fill: #FFCC00;
   transition: 1s ease;
 }
-.profile__info__text {
+.profile__text {
   position: relative;
   margin: 49px 0 20px;
   font-family: "Raleway";
@@ -174,7 +174,7 @@ body {
   line-height: 2.4rem;
   color: #333333;
 }
-.profile__info__slider {
+.profile__slider {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -182,17 +182,17 @@ body {
   width: 50px;
   height: 4px;
 }
-.profile__info__slider .slider__w10 {
+.profile__slider .slider__w10 {
   width: 10px;
   height: 4px;
   background-color: #FFCC00;
 }
-.profile__info__slider .slider__w20 {
+.profile__slider .slider__w20 {
   width: 20px;
   height: 4px;
   background-color: #FFCC00;
 }
-.profile__info__link {
+.profile__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -208,7 +208,7 @@ body {
   text-transform: uppercase;
   color: #666666;
 }
-.profile__info__link:hover {
+.profile__link:hover {
   color: #FFCC00;
   border-color: #CCCCCC;
   transition: 0.5s ease;

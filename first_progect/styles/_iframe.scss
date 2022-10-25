@@ -1,0 +1,43 @@
+.video {
+    max-width: 1170px;
+    margin: 120px auto;
+
+    &__screensaver {
+        display: flex;
+        align-items: center;
+        max-width: 970px;
+        position: relative;
+        margin: 0 auto;
+    }
+    
+    &__iframe {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    &__info {
+        max-width: 970px;
+        margin-top: 50px;
+        
+    }
+
+    &__title {
+        @include font-video-title;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        @include font-statistic-text;
+    }
+    @media screen and (max-width: 1024px) {
+        & {
+            margin: 80px 0;
+        }
+
+        &__title {
+            font-size: 38px;
+            line-height: 40px;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.container {
+    
+    &__footer {
+        padding: 30px 0;
+        border-top: 1px solid $middle-gray;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__reserved {
+        @include font-footer-text;
+    }
+
+    &__by {
+        @include font-footer-text;
+    }
+
+    &__link {
+        margin-left: 12px;
+        @include font-footer-links;
+    }
+
+    &__user {
+        @include font-footer-links;
+    }
+
+    &__privacy {
+        margin-left: 32px;
+        @include font-footer-links;
+    }
+
+    @media screen and (max-width: 820px) {
+        &__info {
+            flex-direction: column;
+            gap: 15px;
+        } 
+    }
+}

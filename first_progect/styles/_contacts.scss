@@ -1,0 +1,107 @@
+.input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(38, 42, 63, 0.1);
+    &::placeholder {
+        @include font-contact-plaseholder;
+    }
+}
+
+.label {
+    display: none;
+}
+
+.contacts {
+    max-width: 1170px;
+    margin: 160px 0 100px;
+    
+    &__wrapper{
+        display: flex;
+        gap: 230px;
+    }
+
+    &__info{
+        width: 50%;
+    }
+
+    &__title {
+        @include font-contacts-text;
+        margin-bottom: 29px;
+    }
+
+    &__text {
+        @include font-statistic-text;
+    }
+
+    &__form {
+        width: 50%;
+    }
+
+    .form {
+        display: inline-flex;
+        flex-direction: column;
+        width: 100%;
+
+        &__link{
+            margin-top: 40px;
+            padding: 0;
+            text-align: left;
+            background-color: transparent;
+            border: none;
+            // position: relative;
+            // transition: .3s linear;
+            
+            // &::after {
+            //     position: absolute;
+            //     content: '';
+            //     height: 13px;
+            //     top: 10px;
+            //     left: 12px;
+            //     right: 237px;
+            //     background-color: $light-orange;
+            //     opacity: 0.3;  
+            //     transition: .3s linear;
+            // }
+        
+            // &:hover {
+            //     color: $orange;
+            // }
+            // &:hover::after {
+            //     background-color: $orange;
+            // }
+        }
+
+        &__input {
+            padding-bottom: 12px;
+
+            & + .form__input {
+                margin-top: 40px;
+            }
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        margin-top: 100px; 
+    }
+
+    @media screen and (max-width: 920px) {
+        &__wrapper{
+            flex-direction: column;
+            align-items: center;
+            gap: 80px;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        &__info{
+            width: 80%;
+        }
+
+        &__form {
+            width: 80%;
+        }  
+
+        .form__link {
+            text-align: center;
+        }
+    }
+}

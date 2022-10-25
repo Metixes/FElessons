@@ -103,13 +103,13 @@ body {
         left: 50%;
     }    
 
-    .profile__image {
+    &__image {
         position: relative;
         max-width: 430px;
         padding: 15px;
     }
 
-    .profile__image-line {
+    &__image-line {
         position: absolute;
         min-width: 100px;
         min-height: 100px;
@@ -146,7 +146,7 @@ body {
         text-align: center;
     }
 
-    &__info__name {
+    &__name {
         padding-bottom: 30px;
         position: relative;
         font-family: 'Roboto';
@@ -155,19 +155,19 @@ body {
         line-height: 4.2rem;
         text-transform: capitalize;
         color: $midle-gray;
+        
+        &::after {
+            position: absolute;
+            content: '';
+            width: 100px;
+            height: 1px;
+            background-color: $golden;
+            bottom: 0;
+            left: 38%;
+        }
     }
 
-    &__info__name::after {
-        position: absolute;
-        content: '';
-        width: 100px;
-        height: 1px;
-        background-color: $golden;
-        bottom: 0;
-        left: 38%;
-    }
-
-    &__info__position {
+    &__position {
         margin: 30px 0 30px;
         font-family: 'Raleway';
         font-size: 2.4rem;
@@ -176,7 +176,7 @@ body {
         color: $midle-gray;
     }
 
-    &__info__social-icons {
+    &__social-icons {
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -204,7 +204,7 @@ body {
         }
     }
 
-    &__info__text {
+    &__text {
         position: relative;
         margin: 49px 0 20px;
         font-family: 'Raleway';
@@ -214,7 +214,7 @@ body {
         color: $dark-gray;
     }
 
-    &__info__slider {
+    &__slider {
         @include display-flex-center-all-sb;
         margin: 0 auto;
         width: 50px;
@@ -233,7 +233,7 @@ body {
         }
     }
 
-    &__info__link {
+    &__link {
         @include display-flex-center-all;
         margin: 0 auto;
         margin-top: 25px;
