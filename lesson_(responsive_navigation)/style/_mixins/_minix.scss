@@ -1,0 +1,51 @@
+
+
+@mixin df-aic-jcsb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin df-aic-jcsb-gap50 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+@mixin df-aic-jcsb-gap20 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+@mixin logo-text {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: $purple-dark;
+}
+
+@mixin item-text {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 20px;
+    color: $gray-dark;
+}
+
+@mixin title-text {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $gray-middle;
+}
+
+@mixin after-text {
+    font-family: 'Montserrat';
+    font-size: 12px;
+    line-height: 15px;
+    color: $white;
+}

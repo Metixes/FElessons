@@ -1,0 +1,32 @@
+@import '_variables/variable';
+@import '_mixins/minix';
+@import 'nav-bar';
+@import 'header';
+
+html {
+    font-size: 16px;
+    line-height: 19.5px;
+}
+
+body {
+    font-family: 'Montserrat', 'sans serif';
+}
+
+.container {
+    display: flex;
+}
+
+.container__wrapper-right {
+    width: 100%;
+    padding: 30px 0 179px 0;
+}
+
+.main {
+    width: 100%;
+
+    &__img {
+        width: 100%;
+    }
+}
+
+

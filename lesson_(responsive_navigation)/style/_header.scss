@@ -1,0 +1,49 @@
+.header {
+    width: 95.9%;
+    margin: 0 auto;
+    margin-bottom: 68px;
+
+    &__container {
+        @include df-aic-jcsb;
+        padding: 22px 20px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+    }
+
+    &__left {
+        @include df-aic-jcsb-gap20;
+    }
+
+    &__fill-icon {
+        fill: $gray-dark;
+        transition: .5s ease;
+    }
+
+    &__icon:hover .header__fill-icon{
+        fill: $purple-light;
+    }
+
+    &__right {
+        @include df-aic-jcsb-gap50;
+    }
+
+    &__leng {
+        @include df-aic-jcsb-gap20; 
+    }
+
+    &__options {
+        @include df-aic-jcsb-gap20;
+    }
+
+    @media screen and (max-width: 900px) {
+        &__leng__country {
+            display: none;
+        }        
+    }
+
+    @media screen and (max-width: 900px) {
+        &__right {
+            gap: 20px;
+        }        
+    }
+}

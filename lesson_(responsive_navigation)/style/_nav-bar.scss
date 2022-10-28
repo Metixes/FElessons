@@ -1,0 +1,224 @@
+.aside-checkbox {
+    display: none;
+
+    &:checked ~ .left-section {
+        width: 86px;
+
+        .left-section__subtitle {
+            display: none;
+        }
+
+        .left-section__title {
+            display: none;
+        }
+
+        .left-section__logo-subtitle {
+            display: none;
+        }
+
+        .left-section__dashed {
+            display: inline-flex;
+            padding-bottom: 15px;
+        }
+
+        .left-section__label {
+            right: -24px;
+        }
+
+        .left-section__link {
+            justify-content: center;
+        }
+
+        .left-section__list {
+            justify-content: center;
+        }
+
+        .left-section__button {
+            transform: rotate(0) 
+        }
+
+        .left-section__position-10::before {
+            left: 50px;
+        }
+
+        .left-section__position-5::before {
+            left: 50px;
+        }
+    }  
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 220px;
+    padding: 30px 0;
+    transition: all .2s linear;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+
+    &__list {
+        position: relative;
+        display: flex;
+        align-items: center;   
+    }
+
+    &__items {
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    &__icon-fill {
+        fill: $gray-dark;
+        transition: .5s ease;
+    }
+
+    &__link-logo {
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+        padding: 10px 15px;
+    }
+
+    &__link {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+        padding: 10px 15px;
+        transition: all .3s ease;
+
+        &:hover {
+            .left-section__icon-fill{
+                fill: $white;
+            }
+            .left-section__subtitle {
+                color: $white;
+            }
+
+            background-color: $purple-light;
+            box-shadow: $box-shadow;
+        }
+    }
+
+    &__position-10::before {
+        @include after-text;
+        position: absolute;
+        content: '10';
+        width: 20px;
+        height: 20px;
+        left: 35px;
+        top: 5px;
+        border-radius: 50%;
+        background-color: $red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__position-5::before {
+        @include after-text;
+        position: absolute;
+        content: '5';
+        width: 20px;
+        height: 20px;
+        left: 35px;
+        top: 5px;
+        border-radius: 50%;
+        background-color: $yellow;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__link-no-hover:hover {
+        background-color: $white;
+    }
+
+    &__dashed {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+
+    &__line {
+        width: 8px;
+        height: 4px;
+        border-radius: 3px;
+        background-color: $purple-light;
+
+        &:nth-child(2) {
+            width: 12px;
+            margin: 0 4px;
+        }
+    }
+
+    &__title {
+        @include title-text;
+        padding: 0 15px 5px;
+    }
+
+    &__logo-subtitle {
+        @include logo-text;
+        margin-left: 7px;
+    }
+
+    &__subtitle {
+        @include item-text;
+        margin-left: 20px;
+        transition: .5s ease;
+    }
+
+    &__label {
+        position: absolute;
+        right: 0;
+        padding: 20px 15px 20px 30px;
+    }
+
+    &__button {
+        transform: rotate(180deg);
+    }
+
+    @media screen and (max-width: 900px) {
+        
+        & {
+            width: 86px;
+            align-items: center;
+        }
+
+        &__label {
+            display: none;
+        }
+        
+        &__subtitle {
+            display: none;
+        }
+
+        &__title {
+            display: none;
+        }
+
+        &__logo-subtitle {
+            display: none;
+        }
+
+        &__dashed {
+            display: inline-flex;
+            padding-bottom: 15px;
+        }
+
+        &__position::before {
+            left: 50px;
+        }
+
+        &__items {
+            width: 100%;
+        }
+
+        &__link {
+            justify-content: center
+        }
+    }
+}
+
+
