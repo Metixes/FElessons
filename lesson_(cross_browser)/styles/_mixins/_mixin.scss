@@ -1,0 +1,84 @@
+// fonts
+@mixin prise-text {
+    font-family: 'Bebas Neue';
+    font-weight: 100;
+    font-size: 6rem;
+    line-height: 6rem;
+    letter-spacing: 0.08em;
+    color: $black;
+}
+@mixin dollar-text {
+    font-family: 'Bebas Neue';
+    font-weight: 100;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    color: $dark-black;
+}
+@mixin currency-text {
+    font-family: 'Bebas Neue';
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.08em;
+    color: $black;
+}
+@mixin subtitle-text {
+    font-family: 'Bebas Neue';
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.04em;
+    color: $black;
+}
+@mixin item-text {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: 0.04em;
+    color: $black;
+}
+@mixin link-text {
+    font-family: 'Bebas Neue';
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.04em;
+    color: $white;
+}
+@mixin subtext-text {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.04em;
+    color: $gray;
+}
+
+@mixin df-center-gap30 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+@mixin df-column-center {
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+}
+
+@mixin df-column-center-gap20 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+@mixin df-column-center-gap40 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+

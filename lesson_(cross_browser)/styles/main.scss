@@ -1,0 +1,197 @@
+@import '_variables/variables';
+@import '_mixins/mixin';
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue-Thin.eot');
+    src: url('../fonts/BebasNeue-Thin.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BebasNeue-Thin.woff2') format('woff2'),
+         url('../fonts/BebasNeue-Thin.woff') format('woff'),
+         url('../fonts/BebasNeue-Thin.ttf')  format('truetype'),
+         url('../fonts/BebasNeue-Thin.svg#Bebas Neue') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue-Light.eot');
+    src: url('../fonts/BebasNeue-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BebasNeue-Light.woff2') format('woff2'),
+         url('../fonts/BebasNeue-Light.woff') format('woff'),
+         url('../fonts/BebasNeue-Light.ttf')  format('truetype'),
+         url('../fonts/BebasNeue-Light.svg#Bebas Neue') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue-Book.eot');
+    src: url('../fonts/BebasNeue-Book.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BebasNeue-Book.woff2') format('woff2'),
+         url('../fonts/BebasNeue-Book.woff') format('woff'),
+         url('../fonts/BebasNeue-Book.ttf')  format('truetype'),
+         url('../fonts/BebasNeue-Book.svg#Bebas Neue') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Light.eot');
+    src: url('../fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Light.woff2') format('woff2'),
+         url('../fonts/Roboto-Light.woff') format('woff'),
+         url('../fonts/Roboto-Light.ttf')  format('truetype'),
+         url('../fonts/Roboto-Light.svg#Roboto Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+html {
+    font-size: 10px;
+    line-height: 10px;
+}
+
+body {
+    font-family: 'Roboto', 'Bebas Neue', 'sans serif';
+}
+
+.main {
+    padding: 120px 0;
+    background-color: $purple;
+
+    &__wrapper {
+        display: flex;
+        // justify-content: space-between;
+        gap: 2.5%;
+        width: 83.3%;
+        margin: 0 8.3%; 
+    }
+}
+
+.card {
+    width: 30.8%;
+    background-color: $dark-white;
+
+    transition: transform .5s ease;
+    
+    &__title {
+        position: relative;
+        @include df-column-center-gap20;
+        padding: 40px 0 30px;
+    }
+
+    &__badge {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        right: -76px;
+        top: 10px;
+        opacity: 0;
+
+        &__tooltip {
+            margin-left: -15px;
+            margin-top: 15px
+        }
+        transition: opacity .2s ease;
+    }
+
+    &__prise {
+        position: relative;
+        display: block;
+    }
+
+    &__prise__text {
+        @include prise-text; 
+        
+        &::before {
+            position: absolute;
+            content: '$';
+            @include dollar-text;
+            left: -9px;
+        }
+        &::after {
+            position: absolute;
+            content: '/HR';
+            @include currency-text;
+            bottom: 0;
+            right: -21px;   
+        }
+    }
+
+    &__subtitle {
+        @include subtitle-text;
+    }
+
+    &__items {
+        padding: 40px 0 60px;
+        background-image: url(../images/bg-image.png);
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &__description {
+        @include df-column-center-gap40;
+
+        &__item {
+            @include item-text;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+        }
+    }
+
+    &__footer {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__subtext {
+            @include subtext-text;
+            padding-top: 47px;
+            padding-bottom: 0px;
+        }
+
+        &__link {
+            position: relative;
+            @include link-text;
+            position: absolute;
+            bottom: -37px;
+            text-decoration: none;
+            padding: 20px 50px;
+
+            background-color: $blue;
+            border-radius: 30px;
+
+            transition: bottom .5s ease, background-color .5s ease-in;
+            transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    
+        .card__badge {
+            opacity: 1;
+            transition: opacity .2s ease .5s;
+        }
+    
+        .card__footer__link {
+            bottom: 34px;
+            transition: bottom .5s ease, background-color .5s ease-in;
+            transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            background-color: $orange;
+        }
+
+        .card__footer__subtext {
+           
+        }
+    }
+    
+}
+
+
+
