@@ -35,21 +35,24 @@ body {
   font-family: "Roboto", "Bebas Neue", "sans serif";
 }
 
-.main {
-  padding: 120px 0;
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   background-color: #9789F9;
 }
-.main__wrapper {
+main__wrapper {
   display: flex;
-  gap: 2.5%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
   width: 83.3%;
-  margin: 0 8.3%;
 }
 
 .card {
   width: 30.8%;
   background-color: #F5F3F9;
-  transition: transform 0.5s ease;
 }
 .card__title {
   position: relative;
@@ -68,7 +71,7 @@ body {
   right: -76px;
   top: 10px;
   opacity: 0;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.5s ease;
 }
 .card__badge__tooltip {
   margin-left: -15px;
@@ -154,22 +157,21 @@ body {
   line-height: 1.8rem;
   letter-spacing: 0.04em;
   color: #A9A9A9;
-  padding-top: 47px;
-  padding-bottom: 0px;
+  padding-top: 39px;
+  transition: padding-bottom 0.5s ease;
 }
 .card__footer__link {
-  position: relative;
   font-family: "Bebas Neue";
   font-size: 1.8rem;
   line-height: 1.8rem;
   letter-spacing: 0.04em;
   color: #FFFFFF;
   position: absolute;
-  bottom: -37px;
+  bottom: -27px;
   text-decoration: none;
   padding: 20px 50px;
-  background-color: #6FCFFB;
   border-radius: 30px;
+  background-color: #6FCFFB;
   transition: bottom 0.5s ease, background-color 0.5s ease-in;
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -181,8 +183,11 @@ body {
   transition: opacity 0.2s ease 0.5s;
 }
 .card:hover .card__footer__link {
-  bottom: 34px;
+  bottom: 56px;
+  background-color: #FD8D7B;
   transition: bottom 0.5s ease, background-color 0.5s ease-in;
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  background-color: #FD8D7B;
+}
+.card:hover .card__footer__subtext {
+  padding-bottom: 30px;
 }/*# sourceMappingURL=main.css.map */

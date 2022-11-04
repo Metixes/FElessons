@@ -55,16 +55,23 @@ body {
     font-family: 'Roboto', 'Bebas Neue', 'sans serif';
 }
 
-.main {
-    padding: 120px 0;
+main {
+    @include df-center;
+    height: 100vh;
     background-color: $purple;
 
     &__wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        // justify-content: space-between;
-        gap: 2.5%;
-        width: 83.3%;
-        margin: 0 8.3%; 
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        gap: 30px;
+        width: 83.3%; 
     }
 }
 
@@ -72,7 +79,7 @@ body {
     width: 30.8%;
     background-color: $dark-white;
 
-    transition: transform .5s ease;
+    // transition: transform .5s ease;
     
     &__title {
         position: relative;
@@ -82,18 +89,29 @@ body {
 
     &__badge {
         position: absolute;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: flex-end;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
         right: -76px;
         top: 10px;
         opacity: 0;
+
+        -webkit-transition: opacity .5s ease;
+
+        -o-transition: opacity .5s ease;
+
+        transition: opacity .5s ease;
 
         &__tooltip {
             margin-left: -15px;
             margin-top: 15px
         }
-        transition: opacity .2s ease;
     }
 
     &__prise {
@@ -136,62 +154,93 @@ body {
 
         &__item {
             @include item-text;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
             gap: 30px;
         }
     }
 
     &__footer {
         position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
 
         &__subtext {
             @include subtext-text;
-            padding-top: 47px;
-            padding-bottom: 0px;
-        }
+            padding-top: 39px;
+
+            -webkit-transition: padding-bottom .5s ease;
+
+            -o-transition: padding-bottom .5s ease;
+
+            transition: padding-bottom .5s ease;
+        } 
 
         &__link {
-            position: relative;
             @include link-text;
             position: absolute;
-            bottom: -37px;
+            bottom: -27px;
             text-decoration: none;
             padding: 20px 50px;
-
-            background-color: $blue;
             border-radius: 30px;
 
+            background-color: $blue;
+
+            -webkit-transition: bottom .5s ease, background-color .5s ease-in;
+
+            -o-transition: bottom .5s ease, background-color .5s ease-in;
+
             transition: bottom .5s ease, background-color .5s ease-in;
-            transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                 -o-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
         }
     }
 
     &:hover {
-        transform: scale(1.1);
-    
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1);
+        
+
         .card__badge {
             opacity: 1;
+            -webkit-transition: opacity .2s ease .5s;
+            -o-transition: opacity .2s ease .5s;
             transition: opacity .2s ease .5s;
         }
     
         .card__footer__link {
-            bottom: 34px;
+            bottom: 56px;
+            background-color: $orange; 
+            -webkit-transition: bottom .5s ease, background-color .5s ease-in; 
+            -o-transition: bottom .5s ease, background-color .5s ease-in; 
             transition: bottom .5s ease, background-color .5s ease-in;
-            transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            background-color: $orange;
+            -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                 -o-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);    
         }
 
         .card__footer__subtext {
-           
+            padding-bottom: 30px;
         }
-    }
-    
+    } 
 }
-
 
 
