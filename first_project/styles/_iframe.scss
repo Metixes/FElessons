@@ -12,14 +12,12 @@
     
     &__iframe {
         position: absolute;
-        top: 30px;
-        left: 30px;
+        left: 4%;
     }
 
     &__info {
         max-width: 970px;
-        margin-top: 50px;
-        
+        margin: 50px auto 0;
     }
 
     &__title {
@@ -27,9 +25,6 @@
         margin-bottom: 20px;
     }
 
-    &__text {
-        @include font-statistic-text;
-    }
     @media screen and (max-width: 1024px) {
         & {
             margin: 80px 0;

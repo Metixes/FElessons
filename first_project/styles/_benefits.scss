@@ -8,7 +8,6 @@
     &__info {
         position: relative;
         padding: 30px 20px;
-
         &::after {
             position: absolute;
             content: '';
@@ -28,10 +27,6 @@
     &__title {
         @include font-benefits-title;
         margin-bottom: 30px;
-    }
-
-    &__subtitle {
-        @include font-statistic-text;
     }
 
     @media screen and (max-width: 1024px) {

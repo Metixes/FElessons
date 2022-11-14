@@ -141,7 +141,7 @@ body {
 }
 @media screen and (max-width: 1024px) {
   .main__container .section {
-    margin-bottom: 90px;
+    margin: 70px 0;
   }
 }
 @media screen and (max-width: 600px) {

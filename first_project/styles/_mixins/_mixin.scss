@@ -45,14 +45,6 @@
     color: $middle-dark;
 }
 
-@mixin font-statistic-text {
-    font-family: 'Lato';
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 26px;
-    color: $middle-dark;
-    opacity: 0.8;
-}
 // font benefits
 @mixin font-benefits-title {
     font-family: 'Playfair Display';
@@ -140,8 +132,6 @@
     letter-spacing: 0.08em;
     color: $middle-dark;
 }
-
-
 
 @mixin bg-blur {
     background: linear-gradient(270deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.244636) 24.1%, rgba(255, 255, 255, 0) 47.19%), rgba(255, 255, 255, 0.02);

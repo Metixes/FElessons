@@ -62,8 +62,6 @@
 }
 
 @mixin df-center {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -74,8 +72,6 @@
 }
 
 @mixin df-column-center {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -87,8 +83,6 @@
 }
 
 @mixin df-column-center-gap20 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -104,8 +98,6 @@
 }
 
 @mixin df-column-center-gap40 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

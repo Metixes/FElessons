@@ -8,7 +8,40 @@
 
 .link {
     @include font-main-link;
-    display: block; 
+    display: inline-flex; 
+    align-items: center;
+    justify-content: center;
+    
+    transition: color .3s ease;
+    
+    &__after {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            left: 10px;
+            right: -7px;
+            height: 13px;
+            top: 11px;
+            background-color: $light-orange;
+            opacity: 0.3;
+        }
+    }
+
+    &:hover {
+       color: $orange-dark;
+
+        .link__after {
+            &::after {
+                background-color: $orange;
+            }
+        } 
+    }
+
+    &:active {
+        color: $blue-deep;
+    }
 }
 
 .main {
@@ -20,50 +53,8 @@
             max-width: 439px;
             margin: 20px 0 50px;
         }
-
-        // &__link {
-        //     // position: relative;
-        //     // transition: .3s linear;
-            
-        //     // &::after {
-        //     //     position: absolute;
-        //     //     content: '';
-        //     //     height: 13px;
-        //     //     bottom: -4px;
-        //     //     left: 10px;
-        //     //     right: 404px;
-        //     //     background-color: $light-orange;
-        //     //     opacity: 0.3;  
-        //     //     transition: .3s linear;
-        //     // }
-        
-        //     // &:hover {
-        //     //     color: $orange;
-        //     // }
-        //     // &:hover::after {
-        //     //     background-color: $orange;
-        //     // }
-        // }
     }
 
-    // @media screen and (max-width: 1024px) {
-    //     &__first-screen {
-    //         margin-top: 50px;
-
-    //         &__title {
-    //             font-size: 34px;
-    //         }
-    //     }
-    // }
-
-    // @media screen and (max-width: 600px) {
-    //     &__first-screen {
-
-    //         &__title {
-    //             font-size: 34px;
-    //         }
-    //     }
-    // }
     @media screen and (max-width: 1024px) {
         &__first-screen {
             margin-top: 100px;
@@ -86,7 +77,7 @@
     display: flex;
     align-items: center;
     max-width: 1170px;
-    margin-top: 150px;
+    margin: 150px 0 120px;
 
     &__picture__img {
         width: 100%;
@@ -134,7 +125,6 @@
         }
 
         &__text {
-            @include font-statistic-text;
             position: relative;
             text-align: center;
         }
@@ -152,7 +142,6 @@
         }
 
         &__description {
-            @include font-statistic-text;
             display: flex;
             flex-direction: column;
             gap: 30px;
@@ -160,27 +149,6 @@
 
         &__link {
             margin-top: 50px;
-            position: relative;
-            transition: .3s linear;
-            
-            // &::after {
-            //     position: absolute;
-            //     content: '';
-            //     height: 13px;
-            //     bottom: -4px;
-            //     left: 10px;
-            //     right: 218px;
-            //     background-color: $light-orange;
-            //     opacity: 0.3;  
-            //     transition: .3s linear;
-            // }
-        
-            // &:hover {
-            //     color: $orange;
-            // }
-            // &:hover::after {
-            //     background-color: $orange;
-            // }
         }
     }
 
@@ -223,39 +191,21 @@
     }
 
     @media screen and (max-width: 700px) {
+        & {
+            flex-direction: column;
+            margin: 80px 0 80px;
+        }
+
         .statistic {
+           position: static;
+           flex-direction: column;
+            
+           &__info {
+            margin: 0;
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 15px 0;
-            bottom: 0;
-
-
-            &__item {
-                display: flex;
-                flex-direction: row;
-                margin-bottom: 30px;
-            }
-
-            &__text-after {
-                display: none;
-            }
-
-            &__points {
-                & + .statistic__points {
-                    margin-top: 0;
-                }
-            }
-
-            &__title {
-                line-height: 60px;
-            }
-
-            &__link {
-               
-            }
+           }
         }
 
         .picture {
@@ -263,6 +213,8 @@
             margin: 0 auto;
             width: 100%;
         }
+        
     }
 }
+
 

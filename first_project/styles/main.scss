@@ -1,0 +1,163 @@
+@import '_variables/variable';
+@import '_mixins/mixin';
+@import 'header';
+@import 'first-screen';
+@import 'benefits';
+@import 'quote';
+@import 'iframe';
+@import 'promises';
+@import 'reviews';
+@import 'contacts';
+@import 'footer';
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Lato', 'Playfair Display', 'sans serif';
+    font-size: 16px;
+    line-height: 26px;
+    color: #262A3F;
+}
+
+.body { 
+    padding-top: 30px;
+    background-image: url(../images/ferst-screen/first-screen-bg.png) ;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    
+    transition: background-color, background-image 0.5s ease;
+
+    @media screen and (max-width: 1024px) {
+        padding-top: 10px;
+
+        &.lock {
+            overflow: hidden;
+        }
+    }  
+}
+
+.body:has(.input-toggle:checked) {
+    background-color: $blue-deep;
+    & {
+        transition: background-image 0.5s ease;
+        background-image: url(../images/ferst-screen/first-screen-bg-black.png)
+    }
+    .wrapper__border3 {
+        background-position: 25% 0;
+    }
+    .wrapper__handle {
+        transform: translate(-10%,-50%);
+    }
+    .wrapper__handle-off {
+        transform: scaleX(0);
+        transition-delay: 0s;
+        transition-timing-function: ease-in;
+    }
+    .wrapper__handle-on {
+        transform: scaleX(1);
+        transition-delay: calc(0.6s/2);
+        transition-timing-function: ease-out;
+    }
+
+    .header {
+        background: linear-gradient(270deg, rgba(22, 25, 38, 0.5) 0%, rgba(22, 25, 38, 0) 24.1%, rgba(22, 25, 38, 0) 47.19%), rgba(22, 25, 38, 0.02);
+    }
+
+    .menu__links, 
+    .title,
+    .statistic__title, 
+    .statistic__title__dollar,
+    .benefits__title,
+    .video__title,
+    .reviews__title,
+    .contacts__title { 
+        color: $white;
+    }
+    
+    .menu__item::after {
+        background: $menu-item-black-theme;
+    }
+
+    .link {
+        color: $middle-green;
+        
+        &__after::after {
+            background-color: $middle-green;
+        }
+    
+        &:hover {
+           color: $green;
+    
+            .link__after {
+                &::after {
+                    background-color: $green;
+                }
+            } 
+        }
+    }
+
+    .promises__link:hover {
+        border: 1px solid $green;
+    }
+
+    .title__green-word {
+        color: $blue;
+    }
+
+    .statistic {
+        background-color: $blue-deep;
+    }
+
+    .text {
+        color: $white;
+    }
+
+    .promises__list {
+        background-color: $blue-deep;
+    }
+
+    .benefits__info::after {
+        background-color: $gray-dark;
+    }
+
+    .benefits__info:hover::after {
+        background-color: $white; 
+    }
+    .svg-fill {
+        stop-color: $middle-green;
+    }
+    .ipad-fill {
+        transition: stroke .3s ease;
+        stroke: $gray-dark;
+    }
+    .video__screensaver:hover{
+        .ipad-fill {
+            stroke: $white;
+        }
+    }
+
+    .promises__list-text {
+        color: $white;
+    }
+
+    .input {
+        background-color: $blue-deep;
+        color: $white;
+        border-bottom: solid 1px $white;
+        &::placeholder {
+            color: $white;
+        }
+    }
+    
+    .container__footer {
+        border-top: 1px solid $gray-dark;
+    }
+
+    .container__info-text {
+        color: $white;
+    }
+    
+}

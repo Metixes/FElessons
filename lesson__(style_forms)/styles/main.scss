@@ -180,11 +180,17 @@ body {
         &__load-photo {
             display: flex;
             flex-direction: column;
+            justify-content: center;
             max-width: 246px;
             margin: 0 10px 0 20px;
+
+            &__label {
+                margin-top: 9px;
+            }
         }
 
         &__btn {
+            margin-top: 8px;
             width: 30px;
             height: 30px;
             background-color: $white;

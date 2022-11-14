@@ -189,10 +189,15 @@ body {
 .main .profile__load-photo {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   max-width: 246px;
   margin: 0 10px 0 20px;
 }
+.main .profile__load-photo__label {
+  margin-top: 9px;
+}
 .main .profile__btn {
+  margin-top: 8px;
   width: 30px;
   height: 30px;
   background-color: #FFFFFF;

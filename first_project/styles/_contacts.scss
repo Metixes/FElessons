@@ -1,7 +1,7 @@
 .input {
     outline: none;
     border: none;
-    border-bottom: 1px solid rgb(38, 42, 63, 0.1);
+    border-bottom: 1px solid $input-white-theme;
     &::placeholder {
         @include font-contact-plaseholder;
     }
@@ -29,10 +29,6 @@
         margin-bottom: 29px;
     }
 
-    &__text {
-        @include font-statistic-text;
-    }
-
     &__form {
         width: 50%;
     }
@@ -43,32 +39,11 @@
         width: 100%;
 
         &__link{
+            justify-content: flex-start;
             margin-top: 40px;
             padding: 0;
-            text-align: left;
             background-color: transparent;
             border: none;
-            // position: relative;
-            // transition: .3s linear;
-            
-            // &::after {
-            //     position: absolute;
-            //     content: '';
-            //     height: 13px;
-            //     top: 10px;
-            //     left: 12px;
-            //     right: 237px;
-            //     background-color: $light-orange;
-            //     opacity: 0.3;  
-            //     transition: .3s linear;
-            // }
-        
-            // &:hover {
-            //     color: $orange;
-            // }
-            // &:hover::after {
-            //     background-color: $orange;
-            // }
         }
 
         &__input {
