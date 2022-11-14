@@ -12,7 +12,7 @@ body {
 }
 
 .b {
-    padding: 60px;
+    margin: 60px auto;
     display: flex;
     gap: 100px;
 }
