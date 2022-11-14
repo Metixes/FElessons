@@ -46,7 +46,10 @@
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
-.body:has(.wrapper__input:checked) .main__first-screen, .body:has(.wrapper__input:checked) .solis {
+.body:has(.wrapper__input:checked) .main__first-screen__text {
+  opacity: 1;
+}
+.body:has(.wrapper__input:checked) .link__after {
   visibility: hidden;
 }
 .body:has(.wrapper__input:checked) .menu {

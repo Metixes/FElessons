@@ -42,7 +42,11 @@
         }
     }
 
-    .main__first-screen, .solis {
+    .main__first-screen__text {
+        opacity: 1;
+    }
+
+    .link__after {
         visibility: hidden;
     }
     
