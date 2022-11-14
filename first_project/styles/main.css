@@ -950,6 +950,7 @@ a {
 }
 
 body {
+  font-display: swap;
   font-family: "Lato", "Playfair Display", "sans serif";
   font-size: 16px;
   line-height: 26px;
