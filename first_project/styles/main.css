@@ -958,7 +958,7 @@ body {
 
 .body {
   padding-top: 30px;
-  background-image: url(../images/ferst-screen/first-screen-bg.png);
+  background-image: url(../images/ferst-screen/first-screen-bg.webp);
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100%;
@@ -978,7 +978,7 @@ body {
 }
 .body:has(.input-toggle:checked) {
   transition: background-image 0.5s ease;
-  background-image: url(../images/ferst-screen/first-screen-bg-black.png);
+  background-image: url(../images/ferst-screen/first-screen-bg-black.webp);
 }
 .body:has(.input-toggle:checked) .wrapper__border3 {
   background-position: 25% 0;
