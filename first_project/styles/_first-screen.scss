@@ -80,7 +80,9 @@
     margin: 150px 0 120px;
 
     &__picture__img {
-        width: 100%;
+        max-width: 100%;
+		width: 100%;
+		height: unset;
     }
 
     .statistic {
