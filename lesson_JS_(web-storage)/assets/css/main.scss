@@ -1,0 +1,149 @@
+@font-face {
+	font-family: 'Lucida Sans Unicode';
+	src: url('fonts/l_10646.eot');
+	src: local('☺'), url('./fonts/l_10646.woff') format('woff'), url('./fonts/l_10646.ttf') format('truetype'), url('./fonts/l_10646.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@import 'variables/variables';
+@import 'mixins/mixin';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    font-size: 22px;
+    color: $black;
+}
+
+.main{
+    padding: 20px;
+    background-color: $blue;
+
+    &-wrapper{
+        padding: 35px 0 94px;
+        background-color: $blue-light;
+    }
+
+    &-weather{
+        display: flex;
+        flex-direction: column;
+        max-width: 1170px;
+        margin: 0 auto;
+
+        &__description{
+            display: flex;
+            align-items: center;
+            max-width: 220px;
+            margin-bottom: 35px;
+
+            &-title{
+                @include weather-title;
+                margin-right: 6px;
+            }
+        }
+
+        &__description-icon{
+            margin-left: 3px;
+        }
+
+        &-items{
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1170px;
+
+            border: 2px solid $white;
+        }
+
+        &__subtitle{
+            @include weather-subtitle;
+            margin-top: 35px;
+        }
+    }
+
+    .item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid $white;
+        cursor: pointer;
+
+        &:nth-child(1){
+            width: 50%;
+            background-color: $blue-white;
+        }
+        &:nth-child(2){
+            width: 25%;
+            background-color: $green-light;
+        }
+        &:nth-child(3){
+            width: 25%;
+            background-color: $pink-deep;
+        }
+        &:nth-child(4){
+            width: 25%;
+            background-color: $red-dark;
+        }
+        &:nth-child(5){
+            width: 25%;
+            background-color: $orange;
+        }
+        &:nth-child(6){
+            width: 25%;
+            background-color: $yellow;
+        }
+        &:nth-child(7){
+            width: 25%;
+            background-color: $green-white;
+        }
+        &:nth-child(8){
+            width: 25%;
+            background-color: $green-deep;
+        }
+        &:nth-child(9){
+            width: 25%;
+            background-color: $pink;
+        }
+        &:nth-child(10){
+            width: 25%;
+            background-color: $green;
+        }
+        &:nth-child(11){
+            width: 25%;
+            background-color: $blue-dark;
+        }
+
+        &:hover{
+            background-color: hard-light;
+        }
+        
+        &-title{
+           @include weather-city-temp;
+        }
+
+        &-content-wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 26px auto;
+        }
+
+        &-content{
+            display: flex;
+            align-items: center;
+
+            &__temp{
+                @include weather-city-temp
+            }
+
+            &__icon{
+                width: 70px;
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+//font
+@mixin weather-title {
+    font-family: 'Lucida Sans Unicode';
+    font-size: 21px;
+    line-height: 25px;
+    color: $white;
+}
+@mixin weather-city-temp {
+    font-family: 'Lucida Sans Unicode';
+    font-size: 22px;
+    line-height: 26px;
+    color: $white;
+}
+@mixin weather-subtitle {
+    font-family: 'Lucida Sans Unicode';
+    font-size: 16px;
+    line-height: 19px;
+    color: $white;
+}
+
