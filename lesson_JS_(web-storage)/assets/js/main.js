@@ -34,7 +34,7 @@ function resCity() {
     const weather = document.querySelector('.main-weather-items')
 
     axios({
-        url: `http://api.openweathermap.org/data/2.5/group?id=${lisbon},${paris},${belgrade},${venice},${telAviv},${cair},${newYork},${newDelhi},${sanFrancisco},${tokyo},${sydney}&units;=metric&appid=${api_key}`,
+        url: `https://api.openweathermap.org/data/2.5/group?id=${lisbon},${paris},${belgrade},${venice},${telAviv},${cair},${newYork},${newDelhi},${sanFrancisco},${tokyo},${sydney}&units;=metric&appid=${api_key}`,
         method: 'GET',
         params: {
             units: 'metric',
